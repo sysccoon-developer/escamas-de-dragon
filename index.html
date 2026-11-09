@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escamas de Dragón | Carne Seca Gourmet</title>
+    <!-- Tailwind CSS por CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0a0a0a',
+                        brandBlack: '#171717',
+                        limon: '#B8860B',
+                        serrano: '#1E4620',
+                        original: '#8B0000'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f3f4f6; }
+        h1, h2, h3 { font-family: 'Cinzel', serif; }
+        .hero-bg {
+            /* Reemplaza con la ruta de tu imagen cuando la tengas */
+            background: linear-gradient(to bottom, rgba(10,10,10,0.7), rgba(10,10,10,1)), url('assets/hero-bg.jpg') center/cover;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-limon selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="p-6 text-center border-b border-gray-800 bg-brandDark sticky top-0 z-50">
+        <h2 class="text-2xl font-bold text-limon tracking-widest uppercase">Escamas de Dragón</h2>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 uppercase tracking-wider">
+                Carne Seca Artesanal Gourmet
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10">
+                Elaborada con 100% cuete de res magro, marinada lentamente y deshidratada a la perfección en León, Gto.
+            </p>
+            <a href="#comprar" class="inline-block bg-limon hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-sm transition-colors text-lg uppercase tracking-wide">
+                Ver Paquetes de Envío
+            </a>
+        </div>
+    </header>
+
+    <!-- Sabores Section -->
+    <section class="py-20 px-6 bg-brandBlack">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl text-center font-bold mb-12 text-white uppercase">Nuestra Trilogía de Sabores</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Sabor Original -->
+                <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
+                    <div class="w-16 h-16 bg-original rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
+                    <h3 class="text-2xl font-bold mb-2">Original</h3>
+                    <p class="text-gray-400 text-sm">Nuestro marinado clásico a base de salsa de soya y vinagre de manzana. El sabor puro de la res.</p>
+                </div>
+
+                <!-- Sabor Serrano -->
+                <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
+                    <div class="w-16 h-16 bg-serrano rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
+                    <h3 class="text-2xl font-bold mb-2">Serrano</h3>
+                    <p class="text-gray-400 text-sm">Toque exacto de picor con polvo de chile serrano fresco deshidratado y pulverizado artesanalmente.</p>
+                </div>
+
+                <!-- Sabor Limón -->
+                <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
+                    <div class="w-16 h-16 bg-limon rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
+                    <h3 class="text-2xl font-bold mb-2">Limón Eureka</h3>
+                    <p class="text-gray-400 text-sm">Cáscara de limón deshidratada que aporta una acidez terrosa, madura y completamente natural.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Venta / Bundles -->
+    <section id="comprar" class="py-20 px-6 bg-brandDark">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl text-center font-bold mb-4 text-white uppercase">Compra en Línea</h2>
+            <p class="text-center text-gray-400 mb-12">Disfruta nuestros Packs con envío seguro a todo México mediante Mercado Libre.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Pack Trilogía -->
+                <div class="border border-gray-700 bg-brandBlack p-8 rounded-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2 uppercase">Pack Trilogía</h3>
+                        <p class="text-limon text-xl font-semibold mb-4">$360 MXN</p>
+                        <ul class="text-gray-400 text-sm space-y-2 mb-8">
+                            <li>✓ 3 Bolsas Stand-Up de 50g</li>
+                            <li>✓ 1 Original, 1 Limón, 1 Serrano</li>
+                            <li>✓ Envío a cargo del comprador</li>
+                        </ul>
+                    </div>
+                    <a href="TU_LINK_DE_MERCADO_LIBRE_AQUI" target="_blank" class="block w-full text-center border border-limon text-limon hover:bg-limon hover:text-white font-bold py-3 px-4 rounded-sm transition-colors uppercase text-sm tracking-wide">
+                        Comprar Trilogía
+                    </a>
+                </div>
+
+                <!-- Pack Dragón -->
+                <div class="border-2 border-limon bg-brandBlack p-8 rounded-sm flex flex-col justify-between relative transform md:-translate-y-4">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-limon text-white text-xs font-bold px-4 py-1 uppercase tracking-wider rounded-sm">
+                        Más Popular
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2 uppercase">Pack Dragón</h3>
+                        <p class="text-limon text-xl font-semibold mb-4">$600 MXN</p>
+                        <ul class="text-gray-400 text-sm space-y-2 mb-8">
+                            <li>✓ 5 Bolsas Stand-Up de 50g</li>
+                            <li>✓ Sabores a tu elección</li>
+                            <li class="text-white font-semibold">✓ Envío GRATIS a todo México</li>
+                        </ul>
+                    </div>
+                    <a href="TU_LINK_DE_MERCADO_LIBRE_AQUI" target="_blank" class="block w-full text-center bg-limon hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-sm transition-colors uppercase text-sm tracking-wide">
+                        Comprar Pack Dragón
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Puntos de Venta Locales -->
+    <section class="py-20 px-6 bg-brandBlack">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white uppercase">Encuéntranos en León, Gto.</h2>
+            <p class="text-gray-400 mb-8">¿Vives en León? Compra tus bolsas individuales ($120 MXN) de entrega inmediata en nuestros exhibidores ubicados en:</p>
+            <div class="bg-brandDark border border-gray-800 rounded-sm p-6 text-left">
+                <ul class="space-y-4 text-gray-300 text-sm">
+                    <li class="flex items-start">
+                        <span class="text-limon mr-2">📍</span> 
+                        <span><strong>Tienda 1:</strong> (Actualiza aquí la dirección cuando coloques el primer mostrador)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-limon mr-2">📍</span> 
+                        <span><strong>Tienda 2:</strong> (Espacio reservado Fase 4)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-limon mr-2">📍</span> 
+                        <span><strong>Tienda 3:</strong> (Espacio reservado Fase 4)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-limon mr-2">📍</span> 
+                        <span><strong>Tienda 4:</strong> (Espacio reservado Fase 4)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-limon mr-2">📍</span> 
+                        <span><strong>Tienda 5:</strong> (Espacio reservado Fase 4)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-brandDark py-10 px-6 text-center">
+        <h2 class="text-xl font-bold text-limon uppercase mb-4">Escamas de Dragón</h2>
+        <p class="text-gray-500 text-sm mb-6">Hecho a mano en León, Guanajuato, México.</p>
+        <div class="flex justify-center space-x-6">
+            <!-- Link a WhatsApp -->
+            <a href="https://wa.me/52XXXXXXXXXX?text=Hola,%20me%20interesan%20las%20Escamas%20de%20Dragón" class="text-gray-400 hover:text-white transition-colors">WhatsApp</a>
+            <!-- Link a Instagram -->
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
