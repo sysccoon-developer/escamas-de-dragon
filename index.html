@@ -21,9 +21,9 @@
 <body class="antialiased selection:bg-limon selection:text-white">
 
     <!-- Navegación -->
-    <nav class="px-4 md:px-6 py-4 border-b border-gray-800 bg-brandDark/95 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between">
+    <nav class="relative px-4 md:px-6 py-4 border-b border-gray-800 bg-brandDark/95 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between">
         <!-- Izquierda: Botones de Secciones -->
-        <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm">
+        <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm z-10">
             <a href="#sabores" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
                 Sabores
             </a>
@@ -35,13 +35,13 @@
             </a>
         </div>
 
-        <!-- Centro: Nombre de la Marca -->
-        <a href="#" class="text-base md:text-xl font-bold text-limon tracking-widest uppercase font-serif hidden sm:block">
+        <!-- Centro: Nombre de la Marca (Centrado Absoluto Matemático) -->
+        <a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-bold text-limon tracking-widest uppercase font-serif hidden sm:block whitespace-nowrap">
             Escamas de Dragón
         </a>
 
         <!-- Derecha: Icon Buttons (Redes Sociales) -->
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-2 z-10">
             <!-- WhatsApp -->
             <a href="https://wa.me/52XXXXXXXXXX?text=Hola,%20me%20interesan%20las%20Escamas%20de%20Drag%C3%B3n" 
                target="_blank" 
