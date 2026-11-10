@@ -6,7 +6,8 @@ tailwind.config = {
                 brandBlack: '#171717',
                 limon: '#996515',
                 serrano: '#1E4620',
-                original: '#6C1515'
+                original: '#6C1515',
+                whatsapp: '#25D366'
             }
         }
     }
