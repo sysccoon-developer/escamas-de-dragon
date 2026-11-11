@@ -34,15 +34,15 @@
     <use href="#icon-instagram" />
   </svg>
   <!-- Whatsapp floating button -->
-  <a id="whatsFloatingButton" class="fixed px-6 py-2.5 bg-whatsapp z-[9999] bottom-10 right-10 flex flex-nowrap items-center rounded-lg shadow-lg shadow-whatsapp/50 border-[2px] border-whatsapp cursor-pointer hover:bg-[transparent] hover:text-whatsapp duration-500" target="_blank">
-    <span class="text-[14px] font-bold">¡Te atenderemos con gusto!</span>
-    <svg class="ml-4 w-4 h-4 fill-current"><use href="#icon-whatsapp" /></svg>
+  <a id="whatsFloatingButton" class="fixed px-6 py-2.5 bg-whatsapp z-[9999] bottom-5 right-5 sm:bottom-10 sm:right-10 flex flex-nowrap items-center rounded-lg shadow-lg shadow-whatsapp/50 border-[2px] border-whatsapp cursor-pointer hover:bg-[transparent] hover:text-whatsapp duration-500" target="_blank">
+    <span class="hidden sm:block text-[14px] font-bold">¡Te atenderemos con gusto!</span>
+    <svg class="sm:ml-4 w-4 h-4 fill-current"><use href="#icon-whatsapp" /></svg>
   </a>
 
   <!-- Navegación -->
-  <nav class="relative px-4 md:px-6 py-4 border-b border-gray-800 bg-brandDark/95 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between">
+  <nav class="relative px-4 md:px-6 py-4 border-b border-gray-800 bg-brandDark/95 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between min-h-[50px]">
       <!-- Izquierda: Botones de Secciones -->
-      <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm z-10">
+      <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm z-10 hidden md:block">
           <a href="#proceso" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
               Proceso
           </a>
@@ -58,12 +58,12 @@
       </div>
 
       <!-- Centro: Nombre de la Marca -->
-      <a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-bold text-brandGold tracking-widest uppercase font-serif hidden sm:block whitespace-nowrap">
+      <a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-bold text-brandGold tracking-widest uppercase font-serif whitespace-nowrap">
           Escamas de Dragón
       </a>
 
       <!-- Derecha: Icon Buttons (Redes Sociales) -->
-      <div class="flex items-center space-x-2 z-10">
+      <div class="flex items-center space-x-2 z-10 hidden md:block">
           <a
             id="whatsIconButton"
             target="_blank" 
@@ -218,7 +218,7 @@
   <section id="comprar" class="py-20 px-6 bg-brandBlack">
       <div class="max-w-6xl mx-auto ">
           <h2 class="text-3xl text-center font-bold mb-4 text-white uppercase">Compra en Línea</h2>
-          <p class="text-center text-gray-400 mb-12">Elige tus sabores favoritos. <b>A partir de 5 piezas el envío corre por nuestra cuenta.</b></p>
+          <p class="text-center text-gray-400 mb-12">Elige tus sabores favoritos. <span class="font-extrabold text-brandGold">A partir de 5 piezas el envío corre por nuestra cuenta.</span></p>
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               
@@ -327,16 +327,15 @@
           <p class="text-gray-400 mb-8">¿Vives en León? Compra tus bolsas individuales ($120 MXN) de entrega inmediata en nuestros exhibidores ubicados en:</p>
           <div class="bg-brandDark border border-gray-800 rounded-sm p-6 text-left">
               <ul class="space-y-4 text-gray-300 text-sm">
-                  <li class="flex items-center grid grid-cols-12 gap 4">
-                    <div class="col-span-10">
+                  <li class="flex items-center grid grid-cols-12 gap-4">
+                    <div class="col-span-12 sm:col-span-10">
                       <span class="mr-2">📍</span> 
                       <span>
-                        <strong>Tienda 1: </strong>
-                        <a class="italic underline" href="https://www.instagram.com/el_senor_de_las_smash" target="_blank" rel="noopener noreferrer">El Señor de las Smash</a>
-                        <span>(En la entrada del fraccionamiento El Molino Gran Jardín rumbo a, Balcones del Campestre, 37138 León de los Aldama, Gto.)</span>
+                        <a class="italic underline font-extrabold text-brandGold" href="https://www.instagram.com/el_senor_de_las_smash" target="_blank" rel="noopener noreferrer">El Señor de las Smash</a>
+                        <span>: En la entrada del fraccionamiento El Molino Gran Jardín rumbo a, Balcones del Campestre, a unos metros del templo de San Rafael, 37138 León de los Aldama, Gto.</span>
                       </span>
                     </div>
-                    <div class="col-span-2">
+                    <div class="flex justify-self-center sm:justify-self-initial col-span-12 sm:col-span-2">
                       <a class="bg-brandGold p-2 rounded-sm text-brandDark hover:bg-limon transition-all transform hover:-translate-y-0.5 uppercase text-xs font-extrabold tracking-wider" href="https://maps.app.goo.gl/eDFzFC3hEkBSymY38" target="_blank" rel="noopener noreferrer">Ver en mapa</a>
                     </div>
                   </li>
