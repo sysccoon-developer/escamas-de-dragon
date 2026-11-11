@@ -2,6 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
+                brandGold: '#d0ac5f',
                 brandDark: '#0a0a0a',
                 brandBlack: '#171717',
                 limon: '#996515',

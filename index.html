@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind.config.js"></script>
   <!-- Whatsapp buttons -->
-  <script src="./js/whatsapp.js"></script>
+  <script src="js/whatsapp.js"></script>
   <!-- Tipografía -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -26,8 +26,12 @@
       <symbol id="icon-whatsapp" viewBox="0 0 24 24">
         <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.764.459 3.487 1.333 5.006l-1.417 5.176 5.297-1.389c1.464.798 3.116 1.218 4.774 1.219h.004c5.507 0 9.99-4.478 9.99-9.985 0-2.668-1.039-5.176-2.927-7.062a9.923 9.923 0 00-7.063-2.949zm5.729 14.162c-.246.694-1.224 1.272-1.996 1.439-.53.115-1.22.207-3.553-.761-2.986-1.24-4.908-4.28-5.056-4.478-.148-.198-1.21-1.611-1.21-3.074 0-1.463.766-2.181 1.04-2.47.273-.288.599-.36.798-.36.199 0 .399.002.571.01.182.008.428-.069.67.513.246.59.842 2.057.917 2.206.074.148.123.322.025.517-.099.198-.148.322-.297.495-.148.173-.312.387-.446.52-.148.148-.302.309-.13.604.173.296.769 1.27 1.65 2.055 1.134 1.01 2.091 1.323 2.388 1.47.297.148.471.124.646-.075.174-.198.744-.867.942-1.164.198-.297.397-.248.67-.148.273.099 1.734.818 2.032.966.297.149.495.223.57.348.074.124.074.719-.172 1.413z"/>
       </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </symbol>
     </defs>
     <use href="#icon-whatsapp" />
+    <use href="#icon-instagram" />
   </svg>
   <!-- Whatsapp floating button -->
   <a id="whatsFloatingButton" class="fixed px-6 py-2.5 bg-whatsapp z-[9999] bottom-10 right-10 flex flex-nowrap items-center rounded-lg shadow-lg shadow-whatsapp/50 border-[2px] border-whatsapp cursor-pointer hover:bg-[transparent] hover:text-whatsapp duration-500" target="_blank">
@@ -39,19 +43,22 @@
   <nav class="relative px-4 md:px-6 py-4 border-b border-gray-800 bg-brandDark/95 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between">
       <!-- Izquierda: Botones de Secciones -->
       <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm z-10">
+          <a href="#proceso" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
+              Proceso
+          </a>
           <a href="#sabores" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
               Sabores
           </a>
           <a href="#comprar" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
-              Paquetes
+              Comprar
           </a>
           <a href="#locales" class="px-3 py-1.5 rounded-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors font-medium">
-              Locales
+              ¿Dónde Conseguirlas?
           </a>
       </div>
 
       <!-- Centro: Nombre de la Marca -->
-      <a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-bold text-limon tracking-widest uppercase font-serif hidden sm:block whitespace-nowrap">
+      <a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-bold text-brandGold tracking-widest uppercase font-serif hidden sm:block whitespace-nowrap">
           Escamas de Dragón
       </a>
 
@@ -68,58 +75,139 @@
             </svg>
           </a>
           <!-- Instagram -->
-          <a href="https://instagram.com/TU_USUARIO" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="Instagram" 
-              class="p-2 bg-gray-900 border border-gray-800 rounded-md text-gray-300 hover:text-pink-400 hover:border-pink-500/40 hover:bg-pink-950/20 transition-all">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          <a
+            href="https://instagram.com/el_senor_de_las_smash" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Instagram" 
+            class="p-2 bg-gray-900 border border-gray-800 rounded-md text-gray-300 hover:text-pink-400 hover:border-pink-500/40 hover:bg-pink-950/20 transition-all">
+              <svg class="w-4 h-4 fill-current">
+                <use href="#icon-instagram" />
               </svg>
           </a>
       </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-bg py-24 px-6 text-center">
-      <div class="max-w-3xl mx-auto">
-          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 uppercase tracking-wider">
-              Carne Seca Artesanal
-          </h1>
-          <p class="text-lg md:text-xl text-gray-300 mb-10">
-              Elaborada con carne magra 100% de res, marinada lentamente y deshidratada a la perfección.
-          </p>
-          <a href="#comprar" class="inline-block bg-limon hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-sm transition-colors text-lg uppercase tracking-wide">
-              Ver Paquetes de Envío
-          </a>
-      </div>
-  </header>
+  <!-- Hero Section con Fondo Completo y Overlay -->
+  <section class="relative min-h-[85vh] flex items-center justify-center py-20 px-6 overflow-hidden bg-brandDark">
+        
+    <!-- Capa 1: Fotografía de Fondo (Cubre el 100% de ancho y alto) -->
+    <img src="assets/hero-bg.webp" 
+         alt="Ingredientes artesanal Escamas de Dragón" 
+         class="absolute inset-0 w-full h-full object-cover object-center opacity-30">
+
+    <!-- Capa 2: Degradado de Oscurecimiento (Garantiza contraste y legibilidad) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-brandDark/70 via-brandDark/85 to-brandDark"></div>
+
+    <!-- Capa 3: Contenido (Por encima del fondo gracias a z-10) -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-widest uppercase font-serif mb-6 leading-tight drop-shadow-lg">
+            Carne Seca<br class="hidden sm:inline"> Artesanal
+        </h1>
+        <p class="text-gray-300 text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light drop-shadow">
+            Elaborada con carne magra 100% de res, marinada lentamente y deshidratada a la perfección.
+        </p>
+        <a href="#comprar" 
+           class="inline-block bg-brandGold hover:bg-yellow-600 text-brandDark font-extrabold py-4 px-8 rounded-sm transition-all transform hover:-translate-y-0.5 uppercase tracking-wider text-xs sm:text-sm shadow-xl shadow-black/60">
+            Ver Paquetes de Envío
+        </a>
+    </div>
+  </section>
+
+  <!-- Sección Proceso Artesanal -->
+  <section id="proceso" class="py-20 px-6 bg-brandBlack border-t border-b border-gray-800">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl text-center font-bold mb-3 text-white uppercase tracking-wider">De la Forja a tu Mesa</h2>
+        <p class="text-center text-white mb-16 max-w-2xl mx-auto text-sm md:text-base">
+            Conoce el proceso artesanal detrás de <i>Escamas de Dragón</i>. Cero conservadores artificiales, solo res magra, ingredientes naturales y tiempo.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Paso 1 -->
+            <div class="bg-brandDark p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-brandGold border border-gray-800">
+                        <!-- Foto del paso 1 -->
+                        <img src="assets/carne.webp" alt="Selección de carne magra" class="w-full h-full object-cover" loading="lazy">
+                        <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">01</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 uppercase">100% Res Magra</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Seleccionamos cortes limpios de primera calidad, removiendo manualmente cualquier exceso de grasa para asegurar un secado óptimo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="bg-brandDark p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-gray-900 border border-gray-800">
+                        <!-- Foto del paso 2 -->
+                        <img src="assets/proceso-marinado.webp" alt="Marinado artesanal" class="w-full h-full object-cover" loading="lazy">
+                        <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">02</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 uppercase">Marinado</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Reposo en nuestra mezcla especial de salsas y especias naturales hechas en casa para infusionar el sabor hasta el corazón de la carne.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="bg-brandDark p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-gray-900 border border-gray-800">
+                        <!-- Foto del paso 3 -->
+                        <img src="assets/deshidratado.webp" alt="Deshidratadores de acero" class="w-full h-full object-cover" loading="lazy">
+                        <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">03</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 uppercase">Deshidratado</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Horas de deshidratado a temperatura controlada en bandejas de acero para lograr la textura crocante característica sin perder nutrientes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="bg-brandDark p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-gray-900 border border-gray-800">
+                        <!-- Foto del paso 4 -->
+                        <img src="assets/proceso-empaque.webp" alt="Empaque stand-up" class="w-full h-full object-cover" loading="lazy">
+                        <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">04</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 uppercase">Empaque Sellado</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Pesado exacto y sellado en bolsa Stand-Up para proteger el contenido de la humedad ambiental hasta el momento en que tú las abras.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
 
   <!-- Sabores Section -->
-  <section id="sabores" class="py-20 px-6 bg-brandBlack">
+  <section id="sabores" class="py-20 px-6 bg-brandDark">
       <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl text-center font-bold mb-12 text-white uppercase">Nuestros Sabores</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
               <!-- Sabor Serrano -->
-              <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
-                  <div class="w-16 h-16 bg-serrano rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
-                  <h3 class="text-2xl font-bold mb-2">Serrano</h3>
-                  <p class="text-gray-400 text-sm">Picor exquisito añadido a nuestra carne con polvo de chile serrano fresco deshidratado y pulverizado por nosotros.</p>
+              <div class="bg-serrano rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
+                  <img class="mb-2" src="assets/serrano.webp" alt="serrano" />
+                  <p class="text-white text-sm">Picor exquisito añadido a nuestra carne con polvo de chile serrano fresco deshidratado y pulverizado por nosotros.</p>
               </div>
               
               <!-- Sabor Original -->
-              <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
-                  <div class="w-16 h-16 bg-original rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
-                  <h3 class="text-2xl font-bold mb-2">Original</h3>
-                  <p class="text-gray-400 text-sm">Nuestro marinado clásico a base de salsa de soya y vinagre de manzana. El sabor puro de la res.</p>
+              <div class="bg-original rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
+                <img class="mb-2" src="assets/original.webp" alt="original" />
+                <p class="text-white text-sm">Nuestro marinado clásico a base de salsa de soya y vinagre de manzana. El sabor puro de la res.</p>
               </div>
 
               <!-- Sabor Limón -->
-              <div class="bg-brandDark border border-gray-800 p-8 rounded-sm text-center transform hover:-translate-y-1 transition-transform">
-                  <div class="w-16 h-16 bg-limon rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600"></div>
-                  <h3 class="text-2xl font-bold mb-2">Limón</h3>
-                  <p class="text-gray-400 text-sm">La acidez irresistible del limón deshidratado en polvo que aporta un sabor completamente natural.</p>
+              <div class="bg-limon rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
+                <img class="mb-2" src="assets/limon.webp" alt="serrano" />
+                <p class="text-white text-sm">La acidez irresistible del limón deshidratado en polvo que aporta un sabor completamente natural.</p>
               </div>
 
           </div>
@@ -127,7 +215,7 @@
   </section>
 
   <!-- Venta / Bundles -->
-  <section id="comprar" class="py-20 px-6 bg-brandDark">
+  <section id="comprar" class="py-20 px-6 bg-brandBlack">
       <div class="max-w-6xl mx-auto ">
           <h2 class="text-3xl text-center font-bold mb-4 text-white uppercase">Compra en Línea</h2>
           <p class="text-center text-gray-400 mb-12">Elige tus sabores favoritos. <b>A partir de 5 piezas el envío corre por nuestra cuenta.</b></p>
@@ -135,10 +223,10 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               
               <!-- Pack 3 -->
-              <div class="border border-gray-700 bg-brandBlack p-8 rounded-sm flex flex-col justify-between transform hover:-translate-y-1 transition-transform">
+              <div class="border border-gray-700 bg-brandBlack p-8 rounded-lg flex flex-col justify-between transform hover:-translate-y-1 transition-transform">
                   <div>
                       <h3 class="text-2xl font-bold text-white mb-2 uppercase">Pack 3 Piezas (Vasallo)</h3>
-                      <p class="text-limon text-xl font-semibold mb-4">$360 MXN</p>
+                      <p class="text-brandGold text-xl font-semibold mb-4">$360 MXN</p>
                       <ul class="text-gray-400 text-sm space-y-2 mb-8">
                           <li>✓ 3 Bolsas Stand-Up de 50g</li>
                           <li>✓ Sabores a elegir</li>
@@ -155,14 +243,14 @@
               </div>
 
               <!-- Pack 5 (Destacado) -->
-              <div class="border-2 border-limon bg-brandBlack p-8 rounded-sm flex flex-col justify-between relative transform md:-translate-y-4 shadow-lg shadow-yellow-900/20">
-                  <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-limon text-white text-xs font-bold px-4 py-1 uppercase tracking-wider rounded-sm">
+              <div class="border-2 border-brandGold bg-brandBlack p-8 rounded-lg flex flex-col justify-between relative transform md:-translate-y-4 shadow-lg shadow-yellow-900/20">
+                  <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brandGold text-white text-xs font-bold px-4 py-1 uppercase tracking-wider rounded-sm">
                       Más Popular
                   </div>
                   <div>
                       <h3 class="text-2xl font-bold text-white mb-2 uppercase">Pack 5 Piezas (Caballero)</h3>
-                      <p class="text-limon text-xl font-semibold mb-4">$600 MXN</p>
-                      <div class="bg-limon/10 border border-limon/40 text-limon text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
+                      <p class="text-brandGold text-xl font-semibold mb-4">$600 MXN</p>
+                      <div class="bg-brandGold/10 border border-brandGold/40 text-brandGold text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
                           ¡Envío GRATIS!
                       </div>
                       <ul class="text-gray-400 text-sm space-y-2 mb-8">
@@ -181,12 +269,12 @@
               </div>
 
               <!-- Pack 10 -->
-              <div class="border border-gray-700 bg-brandBlack p-8 rounded-sm flex flex-col justify-between transform hover:-translate-y-1 transition-transform">
+              <div class="border border-gray-700 bg-brandBlack p-8 rounded-lg flex flex-col justify-between transform hover:-translate-y-1 transition-transform">
                   <div>
                       <h3 class="text-2xl font-bold text-white mb-2 uppercase">Pack 10 Piezas (Barón)</h3>
-                      <p class="text-limon text-xl font-semibold mb-1">$1,150 MXN</p>
+                      <p class="text-brandGold text-xl font-semibold mb-1">$1,150 MXN</p>
                       <p class="text-xs text-gray-500 mb-4">($115 MXN por bolsa)</p>
-                      <div class="bg-limon/10 border border-limon/40 text-limon text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
+                      <div class="bg-brandGold/10 border border-brandGold/40 text-brandGold text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
                           ¡Ahorras $50 + Envío GRATIS!
                       </div>
                       <ul class="text-gray-400 text-sm space-y-2 mb-8">
@@ -205,12 +293,12 @@
               </div>
 
               <!-- Pack 20 -->
-              <div class="border border-gray-700 bg-brandBlack p-8 rounded-sm flex flex-col justify-between transform hover:-translate-y-1 transition-transform lg:col-start-2">
+              <div class="border border-gray-700 bg-brandBlack p-8 rounded-lg flex flex-col justify-between transform hover:-translate-y-1 transition-transform lg:col-start-2">
                   <div>
                       <h3 class="text-2xl font-bold text-white mb-2 uppercase">Caja 20 Piezas (Emperador)</h3>
-                      <p class="text-limon text-xl font-semibold mb-1">$2,200 MXN</p>
+                      <p class="text-brandGold text-xl font-semibold mb-1">$2,200 MXN</p>
                       <p class="text-xs text-gray-500 mb-4">($110 MXN por bolsa)</p>
-                      <div class="bg-limon/10 border border-limon/40 text-limon text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
+                      <div class="bg-brandGold/10 border border-brandGold/40 text-brandGold text-xs font-bold py-2 px-3 rounded-sm text-center mb-6 uppercase tracking-wide">
                           ¡Ahorras $200 + Envío GRATIS!
                       </div>
                       <ul class="text-gray-400 text-sm space-y-2 mb-8">
@@ -233,14 +321,14 @@
   </section>
 
   <!-- Puntos de Venta Locales -->
-  <section id="locales" class="py-20 px-6 bg-brandBlack">
+  <section id="locales" class="py-20 px-6 bg-brandDark">
       <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl font-bold mb-6 text-white uppercase">Encuéntranos en León, Gto.</h2>
           <p class="text-gray-400 mb-8">¿Vives en León? Compra tus bolsas individuales ($120 MXN) de entrega inmediata en nuestros exhibidores ubicados en:</p>
           <div class="bg-brandDark border border-gray-800 rounded-sm p-6 text-left">
               <ul class="space-y-4 text-gray-300 text-sm">
                   <li class="flex items-start">
-                      <span class="text-limon mr-2">📍</span> 
+                      <span class="mr-2">📍</span> 
                       <span><strong>Tienda 1:</strong> (Actualiza aquí la dirección cuando coloques el primer mostrador)</span>
                   </li>
               </ul>
@@ -249,10 +337,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-800 bg-brandDark py-10 px-6 text-center">
-      <h2 class="text-xl font-bold text-limon uppercase mb-4">Escamas de Dragón</h2>
+  <footer class="border-t border-gray-800 bg-brandBlack py-10 px-6 text-center">
+      <h2 class="text-xl font-bold text-brandGold uppercase mb-4">Escamas de Dragón</h2>
       <p class="text-gray-500 text-md">Hecho a mano en León, Guanajuato, México.</p>
-      <p class="text-gray-500 text-sm">Por <i><a href="https://www.instagram.com/el_senor_de_las_smash" target="_blank" rel="noopener noreferrer" class="text-limon underline">El Señor de las Smash</a></i>.</p> 
+      <p class="text-gray-500 text-sm">Por <i><a href="https://www.instagram.com/el_senor_de_las_smash" target="_blank" rel="noopener noreferrer" class="text-brandGold underline">El Señor de las Smash</a></i>.</p> 
+      <img src="assets/dragon.webp" alt="Logo Escamas de Dragón" class="w-[200px] h-[200px] mx-auto mt-10">
   </footer>
 
 </body>
