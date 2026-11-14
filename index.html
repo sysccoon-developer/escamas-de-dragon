@@ -34,9 +34,9 @@
     <use href="#icon-instagram" />
   </svg>
   <!-- Whatsapp floating button -->
-  <a id="whatsFloatingButton" class="fixed px-6 py-2.5 bg-whatsapp z-[9999] bottom-5 right-5 sm:bottom-10 sm:right-10 flex flex-nowrap items-center rounded-lg shadow-lg shadow-whatsapp/50 border-[2px] border-whatsapp cursor-pointer hover:bg-[transparent] hover:text-whatsapp duration-500" target="_blank">
-    <span class="hidden sm:block text-[14px] font-bold">¡Te atenderemos con gusto!</span>
-    <svg class="sm:ml-4 w-4 h-4 fill-current"><use href="#icon-whatsapp" /></svg>
+  <a id="whatsFloatingButton" class="fixed px-5 py-2 bg-whatsapp z-[9999] bottom-5 right-5 sm:bottom-10 sm:right-10 flex flex-nowrap items-center rounded-lg shadow-lg shadow-whatsapp/50 border-[2px] border-whatsapp cursor-pointer hover:bg-[transparent] hover:text-whatsapp duration-500" target="_blank">
+    <span class="hidden sm:block text-[14px] font-bold">¿Cómo te ayudamos, viajero?</span>
+    <svg class="sm:ml-1 w-4 h-4 fill-current"><use href="#icon-whatsapp" /></svg>
   </a>
 
   <!-- Navegación -->
@@ -88,23 +88,20 @@
       </div>
   </nav>
 
-  <!-- Hero Section con Fondo Completo y Overlay -->
-  <section class="relative min-h-[85vh] flex items-center justify-center py-20 px-6 overflow-hidden bg-brandDark">
-        
-    <!-- Capa 1: Fotografía de Fondo (Cubre el 100% de ancho y alto) -->
-    <img src="assets/hero-bg.webp" 
-         alt="Ingredientes artesanal Escamas de Dragón" 
-         class="absolute inset-0 w-full h-full object-cover object-center opacity-30">
+  <!-- Sección de portada -->
+  <section class="relative min-h-[100vh] flex items-center justify-center py-20 px-6 overflow-hidden bg-brandDark">
+    <picture>
+      <source media="(min-width: 768px)" srcset="assets/portada.webp">
+      <img src="assets/portada-mobile.webp" 
+        alt="Ingredientes artesanales Escamas de Dragón" 
+        class="absolute inset-0 w-full h-full object-cover object-center opacity-60">
+    </picture>
 
-    <!-- Capa 2: Degradado de Oscurecimiento (Garantiza contraste y legibilidad) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-brandDark/70 via-brandDark/85 to-brandDark"></div>
-
-    <!-- Capa 3: Contenido (Por encima del fondo gracias a z-10) -->
     <div class="relative z-10 max-w-4xl mx-auto text-center">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-widest uppercase font-serif mb-6 leading-tight drop-shadow-lg">
             Carne Seca<br class="hidden sm:inline"> Artesanal
         </h1>
-        <p class="text-gray-300 text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light drop-shadow">
+        <p class="text-white text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light drop-shadow">
             Elaborada con carne magra 100% de res, marinada lentamente y deshidratada a la perfección.
         </p>
         <a href="#comprar" 
@@ -142,7 +139,7 @@
                 <div>
                     <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-gray-900 border border-gray-800">
                         <!-- Foto del paso 2 -->
-                        <img src="assets/proceso-marinado.webp" alt="Marinado artesanal" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/marinado.webp" alt="Marinado artesanal" class="w-full h-full object-cover" loading="lazy">
                         <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">02</span>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2 uppercase">Marinado</h3>
@@ -170,9 +167,9 @@
             <!-- Paso 4 -->
             <div class="bg-brandDark p-6 rounded-lg flex flex-col justify-between">
                 <div>
-                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-gray-900 border border-gray-800">
+                    <div class="relative mb-4 overflow-hidden rounded-sm aspect-square bg-brandGold border border-gray-800">
                         <!-- Foto del paso 4 -->
-                        <img src="assets/proceso-empaque.webp" alt="Empaque stand-up" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/empaque-serrano.webp" alt="Empaque stand-up" class="w-full h-full object-cover" loading="lazy">
                         <span class="absolute top-2 left-2 bg-brandBlack border border-brandGold text-brandGold font-bold text-xs w-7 h-7 flex items-center justify-center rounded-sm">04</span>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2 uppercase">Empaque Sellado</h3>
@@ -195,19 +192,19 @@
               <!-- Sabor Serrano -->
               <div class="bg-serrano rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
                   <img class="mb-2" src="assets/serrano.webp" alt="serrano" />
-                  <p class="text-white text-sm">Picor exquisito añadido a nuestra carne con polvo de chile serrano fresco deshidratado y pulverizado por nosotros.</p>
+                  <p class="text-white text-sm">El picor exquisito de nuestro serrano deshidratado en polvo añadido a la carne después del marinado.</p>
               </div>
               
               <!-- Sabor Original -->
               <div class="bg-original rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
                 <img class="mb-2" src="assets/original.webp" alt="original" />
-                <p class="text-white text-sm">Nuestro marinado clásico a base de salsa de soya y vinagre de manzana. El sabor puro de la res.</p>
+                <p class="text-white text-sm">Nuestro marinado clásico a base de salsa de soya y vinagre de manzana más el sabor puro de la res.</p>
               </div>
 
               <!-- Sabor Limón -->
               <div class="bg-limon rounded-lg p-8 text-center transform hover:-translate-y-1 transition-transform">
                 <img class="mb-2" src="assets/limon.webp" alt="serrano" />
-                <p class="text-white text-sm">La acidez irresistible del limón deshidratado en polvo que aporta un sabor completamente natural.</p>
+                <p class="text-white text-sm">La acidez irresistible del limón deshidratado en polvo que aporta un sabor potente y delicioso.</p>
               </div>
 
           </div>

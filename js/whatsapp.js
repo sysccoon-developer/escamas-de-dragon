@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const getHref = (isMobile, number) => `https://${isMobile ? 'api' : 'web'}.whatsapp.com/send?l=es&phone=${number}&text=Ingresa tu nombre y asunto para ser atendido por un agente de ventas de Escamas de Dragón`;
+  const getHref = (isMobile, number) => `https://${isMobile ? 'api' : 'web'}.whatsapp.com/send?l=es&phone=${number}&text=Hola, alquimistas 🧙‍♂️ quiero adquirir Escamas de Dragón 🐲`;
 
   let isMobile = false;
 
